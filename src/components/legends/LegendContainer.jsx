@@ -49,7 +49,7 @@ const LegendContainer = () => {
             //             </li>
             //           ))}
             //         </ul>
-            //         <span>Hogwarts House: {legend.official_career}</span>
+            //         <span>Hogwarts: {legend.official_career}</span>
             //       </>
             //     )}
             //   </Card>

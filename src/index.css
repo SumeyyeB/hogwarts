@@ -6,6 +6,7 @@
 
 body {
   background-image: url("./assets/bg-image.jpg");
+  background: linear-gradient(135deg, #2d532c, #583d2a);
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -14,30 +15,42 @@ body {
 }
 
 .title {
-  color: #101415;
-  background-color: rgba(250, 251, 251, 0.5);
-  padding: 5px;
-  border-radius: 1rem;
-  display: inline-block;
+  background: linear-gradient(
+    90deg,
+    rgba(192, 88, 27, 0.7),
+    rgba(234, 238, 5, 0.7)
+  );
+  padding: 3px 10px;
+  border: 2px solid rgba(133, 42, 42, 0.3);
+  border-radius: 45px;
+  font-size: 1.5rem;
 }
 
 .card-container {
-  background-color: rgba(11, 22, 35, 0.6);
-  min-height: 350px;
+  background: rgba(121, 115, 44, 0.8);
+  backdrop-filter: blur(10px);
+  border-radius: 15px;
+  padding: 20px;
+  margin: 20px auto;
+  max-width: 1200px;
+  box-shadow: 0 4px 15px rgba(168, 35, 35, 0.3);
 }
 
 .player-card {
   height: 400px !important;
   overflow: hidden;
+  border-radius: 10px;
+  transition: transform 0.4s, box-shadow 0.4s;
 
   & img {
     height: 100%;
     width: 100%;
-    transition: all 0.3s;
-    filter: sepia(0.5);
+    object-fit: cover;
+    transition: filter 0.4s, transform 0.4s;
+    filter: grayscale(1) brightness(0.7);
   }
   &:hover {
-    box-shadow: 3px 3px 20px rgba(0, 0, 0, 0.5);
+    box-shadow: 3px 3px 20px rgba(104, 18, 18, 0.5);
     & img {
       transform: scale(1.1);
       filter: none;
